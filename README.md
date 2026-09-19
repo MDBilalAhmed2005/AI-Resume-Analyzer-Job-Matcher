@@ -73,7 +73,7 @@ AI-Resume-Analyzer-Job-Matcher/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/AI-Resume-Analyzer-Job-Matcher.git
+git clone https://github.com/MDBilalAhmed2005/AI-Resume-Analyzer-Job-Matcher.git
 
 cd AI-Resume-Analyzer-Job-Matcher
 
