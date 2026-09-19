@@ -4,9 +4,9 @@ An AI-powered web application that analyzes multiple resumes against a job descr
 
 ## 📌 Project Overview
 
-The AI Resume Analyzer & Job Matcher helps recruiters reduce the manual effort involved in screening resumes.
+The AI Resume Analyzer & Job Matcher helps reduce the manual effort involved in resume screening.
 
-Users can upload multiple PDF resumes and enter a job description. The application extracts text from each resume, compares it with the job description using NLP and TF-IDF-based similarity, calculates a match score, ranks candidates, and identifies matched and missing skills.
+Users can upload multiple PDF resumes and enter a job description. The application extracts text from each resume, compares it with the job description using TF-IDF and cosine similarity, calculates match scores, ranks candidates, and identifies matched and missing skills.
 
 ## ✨ Features
 
@@ -28,8 +28,8 @@ Users can upload multiple PDF resumes and enter a job description. The applicati
 - Streamlit
 - Scikit-learn
 - Pandas
-- spaCy
 - pypdf
+- Regular Expressions (Regex)
 - TF-IDF
 - Cosine Similarity
 
@@ -52,10 +52,12 @@ Rank Candidates
         ↓
 Analyze Matched & Missing Skills
         ↓
-Generate HR Report  
+Generate HR Report
+```
 
 ## 📂 Project Structure
 
+```text
 AI-Resume-Analyzer-Job-Matcher/
 │
 ├── app.py
@@ -65,8 +67,8 @@ AI-Resume-Analyzer-Job-Matcher/
 ├── skills.py
 ├── requirements.txt
 ├── README.md
-├── .gitignore
-└── venv/  
+└── .gitignore
+```
 
 ## 🚀 Installation
 
@@ -74,25 +76,45 @@ AI-Resume-Analyzer-Job-Matcher/
 
 ```bash
 git clone https://github.com/MDBilalAhmed2005/AI-Resume-Analyzer-Job-Matcher.git
+```
 
+### 2. Open the project
+
+```bash
 cd AI-Resume-Analyzer-Job-Matcher
+```
 
+### 3. Create a virtual environment
+
+```bash
 python -m venv venv
+```
 
+### 4. Activate the virtual environment
+
+Windows PowerShell:
+
+```powershell
 .\venv\Scripts\Activate.ps1
+```
 
+### 5. Install dependencies
+
+```bash
 pip install -r requirements.txt
+```
 
+### 6. Run the application
+
+```bash
 streamlit run app.py
+```
 
+The application will open in your browser at:
+
+```text
 http://localhost:8501
-
-
-### ⚠️ One important point
-
-`YOUR-USERNAME` is just a **placeholder** for now. Later, when we create your GitHub repository, we'll replace it with your actual GitHub username.
-
-So **yes, paste all of it into `README.md` exactly as shown.** Then press **Ctrl + S**.
+```
 
 ## 📊 Sample Results
 
@@ -107,19 +129,25 @@ The system successfully:
 - Identified missing skills
 - Generated an HR-ready CSV report
 
-Example output:
+### Example Output
 
 | Rank | Candidate | Match Score | Status |
-|---|---|---:|---|
+|---:|---|---:|---|
 | 1 | Sample Resume A | 68.59% | Strong Match |
 | 2 | Sample Resume C | 55.89% | Good Match |
 | 3 | Sample Resume B | 49.91% | Good Match |
 
-> Note: Match scores are calculated using TF-IDF vectorization and cosine similarity between the resume and job description. 
+> Note: Match scores are calculated using TF-IDF vectorization and cosine similarity between the resume and job description.
+
+## 🎯 Use Cases
+
+- Resume screening
+- Internship candidate matching
+- Entry-level recruitment
+- HR resume analysis
+- Job-specific candidate comparison
 
 ## 🚀 Future Improvements
-
-The project can be further improved by adding:
 
 - 🔍 Advanced NLP-based resume understanding
 - 🧠 Semantic similarity using transformer models
@@ -130,7 +158,7 @@ The project can be further improved by adding:
 - 🔐 User authentication
 - ☁️ Cloud deployment
 - 🤖 AI-generated resume feedback
-- 📧 Automated candidate communication 
+- 📧 Automated candidate communication
 
 ## 👨‍💻 Author
 
@@ -140,5 +168,4 @@ B.E. Computer Science & Engineering — Data Science
 
 Interested in Artificial Intelligence, Machine Learning, Data Science and AI-powered applications.
 
-GitHub: **MDBilalAhmed2005** 
-
+**GitHub:** [MDBilalAhmed2005](https://github.com/MDBilalAhmed2005)
